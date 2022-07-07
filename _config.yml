@@ -106,3 +106,14 @@ deploy:
   repo:  https://github.com/tby-luoyu/tby-luoyu.github.io
   branch: master # 默认使用 master 分支
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  meting: true
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+engine_search:
+  enable: true
+  href: 'https://www.baidu.com/s?wd=site:'
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
+  domain: tby-luoyu.github.io

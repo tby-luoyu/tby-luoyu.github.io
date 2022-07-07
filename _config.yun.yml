@@ -2,3 +2,50 @@ avatar:
   url: https://s1.328888.xyz/2022/07/05/kcrC.webp # 你的头像图片地址
   rounded: true
   opacity: 1
+aplayer:
+  meting: true
+  global: true
+  widget:
+    enable: true
+    autoplay: true
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+pjax:
+  enable: true
+  
+
+head:
+  css:
+    aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css
+  js:
+    defer:
+      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/load-aplayer.js
+social:
+  - name: GitHub
+    link: https://github.com/tby-luoyu
+    icon: ri:github-line
+    color: '#181717'
+  - name: E-Mail
+    link: 2086097937@qq.com
+    icon: ri:mail-line
+    color: '#8E71C1'
+  - name: 微博
+    link: https://weibo.com/6222947045/profile?rightmod=1&wvr=6&mod=personinfo
+    icon: ri:weibo-line
+    color: '#E6162D'
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=1639224024
+    icon: ri:netease-cloud-music-line
+    color: '#C10D0C'
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/353404396?spm_id_from=333.976.0.0
+    icon: ri:bilibili-line
+    color: '#FF8EB3'
