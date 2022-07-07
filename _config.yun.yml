@@ -17,6 +17,11 @@ aplayer:
     lrcType: 0
     listFolded: false
     listMaxHeight: 340px
+    meting:
+      enable: true
+      id: 2468924580
+      server: netease
+      type: playlist
 pjax:
   enable: true
   
