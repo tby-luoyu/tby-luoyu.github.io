@@ -281,4 +281,13 @@
         <tag>-测试</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ui测试</title>
+    <url>/2022/07/19/ui%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h1><p><img src="https://img.tukuppt.com/ad_preview/00/14/50/5c998d57ac141.jpg!/fw/780" alt="alt 图标" loading="lazy"></p>
+]]></content>
+      <tags>
+        <tag>-测试</tag>
+      </tags>
+  </entry>
 </search>
