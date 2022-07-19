@@ -272,4 +272,13 @@
         <tag>-教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>测试页面</title>
+    <url>/2022/07/19/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>#测试文章<br>这是个测试页面嘿嘿😘<br><img src="https://img.tukuppt.com//ad_preview/00/14/50/5c998d57ac141.jpg!/fw/980" alt="alt 图标" loading="lazy">上面是图片</p>
+]]></content>
+      <tags>
+        <tag>-测试</tag>
+      </tags>
+  </entry>
 </search>
