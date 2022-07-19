@@ -263,4 +263,13 @@
         <tag>-分享</tag>
       </tags>
   </entry>
+  <entry>
+    <title>博客文章编辑器使用教程（仅适合hexo的博客）</title>
+    <url>/2022/07/19/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%85%E9%80%82%E5%90%88hexo%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>标题语法：<br>#hello 这是一段标题<br>##<br>图片：<br>{图 片}url地址{图 片}<br>删掉图片之间的空格程序会自动识别这个文章就是用的这个小脚本滴所以防止误识别空格了<br>目前不支持个性化字体等骚操作，等日后作者再补充<br>其余文章正常写法平常怎么打文档就怎么写</p>
+]]></content>
+      <tags>
+        <tag>-教程</tag>
+      </tags>
+  </entry>
 </search>
