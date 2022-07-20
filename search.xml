@@ -351,7 +351,9 @@
     <url>/2022/07/20/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="更新3"><a href="#更新3" class="headerlink" title="更新3"></a>更新3</h1><p>添加了插入音乐的语法<br>{音 乐}url地址{音 乐}（老规矩去掉”音乐”中的空格即可）<br>演示如下<br>​<audio id="audio" controls="" preload="none"></p>
 <source id="mp3" src="http://m801.music.126.net/20220720104306/929ad0074cbd18de0b0d4139a61cbc54/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9081345154/fa3d/5a52/45f2/56debb4cd41cef9a04b50169af0f7962.mp3">
-</audio>或者支持]]></content>
+</audio>或者支持网易云插入内联播放器iframe
+直接复制外链播放器即可
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1846809171&auto=1&height=66"></iframe>]]></content>
       <tags>
         <tag>-测试</tag>
       </tags>
