@@ -414,4 +414,15 @@
         <tag>-在线阅览</tag>
       </tags>
   </entry>
+  <entry>
+    <title>原神私服教程</title>
+    <url>/2022/10/16/%E5%8E%9F%E7%A5%9E%E7%A7%81%E6%9C%8D%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="资源下载"><a href="#资源下载" class="headerlink" title="资源下载"></a>资源下载</h1><p>地址： <a href="https://cowtransfer.com/s/2311c9dbf26543">https://cowtransfer.com/s/2311c9dbf26543</a> 点击链接查看 [ 原神 ] ，或访问奶牛快传 cowtransfer.com 输入传输口令 1f2oqm 查看；</p>
+<h2 id="pc端"><a href="#pc端" class="headerlink" title="pc端"></a>pc端</h2><p>首先下载并安装好官服元神，资源也要下载好。<br>之后下载网盘中【pc端】所有内容<br>首先解压补丁然后进行以下操作<br>1.打开元神根目录（本体安装位置）<br><img src="https://img1.imgtp.com/2022/10/16/EeQFmXrZ.png" alt="alt 图标" loading="lazy">然后打开到native目录下<br><img src="https://img1.imgtp.com/2022/10/16/zJRf3EJ0.png" alt="alt 图标" loading="lazy"><img src="https://img1.imgtp.com/2022/10/16/1ULMs35o.png" alt="alt 图标" loading="lazy">此目录下面有一个 UserAssembly.dll，请把它重命名为 UserAssembly-官服.dll，否则你将无法进入官服。<br>复制刚才解压得到的 UserAssembly.dll到此目录。</p>
+<h3 id="打开代理"><a href="#打开代理" class="headerlink" title="打开代理"></a>打开代理</h3><p>填写如图<br><img src="https://img1.imgtp.com/2022/10/16/NFv8Cs0d.png" alt="alt 图标" loading="lazy">之后打开代理就欧克，登陆进去进入游戏一定要关闭否则被拉黑名单。。。<br>手机端教程见下一篇</p>
+]]></content>
+      <tags>
+        <tag>-教程</tag>
+      </tags>
+  </entry>
 </search>
