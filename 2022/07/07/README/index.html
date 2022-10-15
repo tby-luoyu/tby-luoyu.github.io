@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="落雨"><meta name="copyright" content="落雨"><meta name="generator" content="Hexo 5.4.2"><meta name="theme" content="hexo-theme-yun"><title>Tby落雨の小屋</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link class="aplayer-style-marker" rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script class="aplayer-script-marker" src="https://fastly.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" defer></script><script class="meting-script-marker" src="https://fastly.jsdelivr.net/npm/meting@1/dist/Meting.min.js" defer></script><script src="https://fastly.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer type="module"></script><script src="https://fastly.jsdelivr.net/npm/vue@2.6.14"></script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"example.com","root":"/","title":"落雨酱的小屋","version":"1.10.4","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://el-bot-api.vercel.app/api/words/young"},"fireworks":{"colors":null},"vendors":{"darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js" defer></script><script src="/js/load-aplayer.js" defer></script><meta name="description" content="title：ai围棋说明 KaTrain KaTrain is a tool for analyzing games and playing go with AI feedback from KataGo:  Review your games to find the moves that were most costly in terms of points lost. Play agains">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tby落雨の小屋">
+<meta property="og:url" content="http://example.com/2022/07/07/README/index.html">
+<meta property="og:site_name" content="Tby落雨の小屋">
+<meta property="og:description" content="title：ai围棋说明 KaTrain KaTrain is a tool for analyzing games and playing go with AI feedback from KataGo:  Review your games to find the moves that were most costly in terms of points lost. Play agains">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://img.shields.io/github/release/sanderland/katrain?label=download">
+<meta property="og:image" content="http://img.shields.io/pypi/l/katrain">
+<meta property="og:image" content="http://img.shields.io/github/downloads/sanderland/katrain/total?color=%23336699&label=github%20downloads">
+<meta property="og:image" content="http://pepy.tech/badge/katrain">
+<meta property="og:image" content="http://img.shields.io/static/v1?label=sponsor&message=%E2%9D%A4&logo=GitHub&color=dcb424&link=http://github.com/sponsors/sanderland/">
+<meta property="og:image" content="http://img.shields.io/discord/417022162348802048?logo=discord">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-uk.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-de.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-fr.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-ru.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-cn.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-tw.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-ko.png">
+<meta property="og:image" content="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-jp.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sanderland/katrain/master/screenshots/analysis.png">
+<meta property="og:image" content="http://i.imgur.com/YcpmSBx.png">
+<meta property="og:image" content="http://i.imgur.com/3EP4IEr.png">
+<meta property="og:image" content="http://i.imgur.com/jAdcSL5.png">
+<meta property="og:image" content="http://img.shields.io/github/issues/sanderland/katrain">
+<meta property="og:image" content="http://img.shields.io/static/v1?label=contributors&message=26&color=dcb424">
+<meta property="og:image" content="http://img.shields.io/static/v1?label=sponsor&message=%E2%9D%A4&logo=GitHub&color=dcb424&link=http://github.com/sponsors/sanderland/">
+<meta property="article:published_time" content="2022-07-07T11:19:40.659Z">
+<meta property="article:modified_time" content="2022-07-07T11:20:22.415Z">
+<meta property="article:author" content="落雨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img.shields.io/github/release/sanderland/katrain?label=download"><script>(function() {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="落雨"><img width="96" loading="lazy" src="https://s1.328888.xyz/2022/07/05/kcrC.webp" alt="落雨"></a><div class="site-author-name"><a href="/about/">落雨</a></div><span class="site-name">Tby落雨の小屋</span><sub class="site-subtitle"></sub><div class="site-description">摆烂空间</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">22</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">9</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/tby-luoyu" title="GitHub" target="_blank" style="color:#181717"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="2086097937@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/6222947045/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" title="微博" target="_blank" style="color:#E6162D"><span class="icon iconify" data-icon="ri:weibo-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=1639224024" title="网易云音乐" target="_blank" style="color:#C10D0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/353404396?spm_id_from=333.976.0.0" title="哔哩哔哩动画" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title%EF%BC%9Aai%E5%9B%B4%E6%A3%8B%E8%AF%B4%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">title：ai围棋说明</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#KaTrain"><span class="toc-number"></span> <span class="toc-text"> KaTrain</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Manual"><span class="toc-number">1.</span> <span class="toc-text">Manual</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Preview-and-Youtube-Videos"><span class="toc-number">2.</span> <span class="toc-text">  Preview and Youtube Videos</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">3.</span> <span class="toc-text"> Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuring-KataGo"><span class="toc-number">4.</span> <span class="toc-text">  Configuring KataGo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Play-against-AI"><span class="toc-number">5.</span> <span class="toc-text"> Play against AI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Instant-feedback"><span class="toc-number">5.1.</span> <span class="toc-text">Instant feedback</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AIs"><span class="toc-number">5.2.</span> <span class="toc-text">AIs</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Analysis"><span class="toc-number">6.</span> <span class="toc-text"> Analysis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keyboard-and-mouse-shortcuts"><span class="toc-number">7.</span> <span class="toc-text"> Keyboard and mouse shortcuts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contributing-to-distributed-training"><span class="toc-number">8.</span> <span class="toc-text">  Contributing to distributed training</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Themes"><span class="toc-number">9.</span> <span class="toc-text"> Themes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FAQ"><span class="toc-number">10.</span> <span class="toc-text"> FAQ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Support-Contribute"><span class="toc-number">11.</span> <span class="toc-text"> Support &#x2F; Contribute</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="http://example.com/2022/07/07/README/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="落雨"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Tby落雨の小屋"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"></h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2022-07-07 19:19:40" itemprop="dateCreated datePublished" datetime="2022-07-07T19:19:40+08:00">2022-07-07</time></div><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><hr>
+<h2 id="title：ai围棋说明"><a href="#title：ai围棋说明" class="headerlink" title="title：ai围棋说明"></a>title：ai围棋说明</h2><h1 id="KaTrain"><a href="#KaTrain" class="headerlink" title=" KaTrain"></a><a name="manual"></a> KaTrain</h1><p><a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/releases"><img src="http://img.shields.io/github/release/sanderland/katrain?label=download" alt="Latest Release" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/MIT_License"><img src="http://img.shields.io/pypi/l/katrain" alt="License:MIT" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/releases"><img src="http://img.shields.io/github/downloads/sanderland/katrain/total?color=%23336699&label=github%20downloads" alt="GitHub Downloads" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://pepy.tech/project/katrain"><img src="http://pepy.tech/badge/katrain" alt="PyPI Downloads" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://github.com/sponsors/sanderland"><img src="http://img.shields.io/static/v1?label=sponsor&message=%E2%9D%A4&logo=GitHub&color=dcb424&link=http://github.com/sponsors/sanderland/" alt="Github sponsors" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://discord.com/channels/417022162348802048/629446365688365067"><img src="http://img.shields.io/discord/417022162348802048?logo=discord" alt="Discord" loading="lazy"></a></p>
+<p>KaTrain is a tool for analyzing games and playing go with AI feedback from KataGo:</p>
+<ul>
+<li>Review your games to find the moves that were most costly in terms of points lost.</li>
+<li>Play against AI and get immediate feedback on mistakes with option to retry.</li>
+<li>Play against a wide range of weakened versions of AI with various styles.</li>
+<li>Automatically generate focused SGF reviews which show your biggest mistakes.</li>
+</ul>
+<h2 id="Manual"><a href="#Manual" class="headerlink" title="Manual"></a>Manual</h2><table>
+<td>
+
+<ul>
+<li><a href="#preview">Previews and YouTube tutorials</a></li>
+<li><a href="#install">Installation</a></li>
+<li><a href="#ai">Manual</a><ul>
+<li><a href="#kata">Configuring KataGo</a></li>
+<li><a href="#ai">Play against AI</a></li>
+<li><a href="#analysis">Analyzing your Games</a></li>
+<li><a href="#keyboard">Keyboard shortcuts</a></li>
+<li><a href="#distributed">Distributed training</a></li>
+<li><a href="#themes">Themes</a></li>
+</ul>
+</li>
+<li><a href="#faq">FAQ and Troubleshooting</a></li>
+<li><a href="#support">Contributing</a></li>
+</ul>
+<td>
+
+<p><a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/blob/master/README.md"><img alt="English" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-uk.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=de&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="German" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-de.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=fr&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="French" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-fr.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=ru&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="Russian" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-ru.png" width=50 loading="lazy"></a><br><br/></p>
+<p><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=zh-CN&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="Simplified Chinese" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-cn.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=zh-TW&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="Traditional Chinese" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-tw.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=ko&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="Korean" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-ko.png" width=50 loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://translate.google.com/translate?sl=en&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsanderland%2Fkatrain%2Fblob%2Fmaster%2FREADME.md"><img alt="Japanese" src="https://github.com/sanderland/katrain/blob/master/katrain/img/flags/flag-jp.png" width=50 loading="lazy"></a></p>
+</td>
+</table>
+
+<h2 id="Preview-and-Youtube-Videos"><a href="#Preview-and-Youtube-Videos" class="headerlink" title="  Preview and Youtube Videos"></a><a name="preview"></a>  Preview and Youtube Videos</h2><img alt="screenshot" src="https://raw.githubusercontent.com/sanderland/katrain/master/screenshots/analysis.png" width="550" loading="lazy">
+
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Local Joseki Analysis</strong></th>
+<th align="center"><strong>Analysis Tutorial</strong></th>
+<th align="center"><strong>Teaching Game Tutorial</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=tXniX57KtKk"><img src="http://i.imgur.com/YcpmSBx.png" alt="Local Joseki Analysis Video" loading="lazy"></a></td>
+<td align="center"><a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=qjxkcKgrsbU"><img src="http://i.imgur.com/3EP4IEr.png" alt="Analysis Tutorial" loading="lazy"></a></td>
+<td align="center"><a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=wFl4Bab_eGM"><img src="http://i.imgur.com/jAdcSL5.png" alt=" Teaching Game Tutorial" loading="lazy"></a></td>
+</tr>
+</tbody></table>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title=" Installation"></a><a name="install"></a> Installation</h2><ul>
+<li>See the <a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/releases">releases page</a> for downloadable executables for Windows and macOS.</li>
+<li>Alternatively use <code>pip3 install -U katrain</code> to install the latest version from PyPI on any 64-bit OS.</li>
+<li>On macOS, you can also use <code>brew install katrain</code> to install the app.</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sanderland/katrain/blob/master/INSTALL.md">This page</a> has detailed instructions for Window, Linux and macOS,<br>as well as troubleshooting and setting up KataGo to use multiple GPUs.</li>
+</ul>
+<h2 id="Configuring-KataGo"><a href="#Configuring-KataGo" class="headerlink" title="  Configuring KataGo"></a><a name="kata"></a>  Configuring KataGo</h2><p>KaTrain comes pre-packaged with a working KataGo (OpenCL version) for Windows, Linux, and pre-M1 Mac operating systems, and the 15 block model.</p>
+<p>To change the model, open ‘General and Engine settings’ in the application and ‘Download models’. You can then select the model you want from the dropdown menu.</p>
+<p>To change the katago binary, e.g. to the Eigen/CPU version if you don’t have a GPU, click ‘Download KataGo versions’.<br>  You can then select the KataGo binary from the dropdown menu.</p>
+<p>Finally, you can override the entire command used to start the analysis engine, which<br> can be useful for connecting to a remote server. Do keep in mind that KaTrain uses the <em>analysis engine</em><br> of KataGo, and not the GTP engine.</p>
+<h2 id="Play-against-AI"><a href="#Play-against-AI" class="headerlink" title=" Play against AI"></a><a name="ai"></a> Play against AI</h2><ul>
+<li>Select the players in the main menu, or under ‘New Game’.</li>
+<li>In a teaching game, KaTrain will analyze your moves and automatically undo those that are sufficiently bad.</li>
+<li>When playing against AI, note that the “Undo” button will undo both the AI’s last move and yours.</li>
+</ul>
+<h3 id="Instant-feedback"><a href="#Instant-feedback" class="headerlink" title="Instant feedback"></a>Instant feedback</h3><p>The dots on the move indicate how many points were lost by that move.</p>
+<ul>
+<li>The colour indicates the size of the mistake according to KataGo</li>
+<li>The size indicates if the mistake was actually punished. Going from fully punished at maximal size,<br>to no actual effect on the score at minimal size.</li>
+</ul>
+<p>In short, if you are a weaker player you should mostly focus on large dots that are red or purple,<br>while stronger players can pay more attention to smaller mistakes. If you want to hide some colours<br>on the board, or not output details for them in SGFs,you can do so under ‘Configure Teacher’.</p>
+<h3 id="AIs"><a href="#AIs" class="headerlink" title="AIs"></a>AIs</h3><p>This section describes the available AIs.</p>
+<p>In the ‘AI settings’, settings which have been tested and calibrated are at the top and have a lighter color,<br>changing these will show an estimate of rank.<br>This estimate should be reasonably accurate as long as you have not changed the other settings.</p>
+<ul>
+<li>Recommended options for serious play include:<ul>
+<li><strong>KataGo</strong> is full KataGo, above professional level. The analysis and feedback given is always based on this full strength KataGo AI.</li>
+<li><strong>Calibrated Rank Bot</strong> was calibrated on various bots (e.g. GnuGo and Pachi at different strength settings) to play a balanced<br>game from the opening to the endgame without making serious (DDK) blunders. Further discussion can be found<br><a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/issues/44">here</a> and <a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/issues/74">here</a>.</li>
+<li><strong>Simple Style</strong> Prefers moves that solidify both player’s territory, leading to relatively simpler moves.</li>
+<li><strong>ScoreLoss</strong> is KataGo analyzing as usual, but<br>choosing from potential moves depending on the expected score loss, leading to a varied style with mostly small mistakes.</li>
+<li><strong>Policy</strong> uses the top move from the policy network (it’s ‘shape sense’ without reading).</li>
+<li><strong>Policy Weighted</strong> picks a random move weighted by the policy, leading to a varied style with mostly small mistakes, and occasional blunders due to a lack of reading.</li>
+<li><strong>Blinded Policy</strong> picks a number of moves at random and play the best move among them, being effectively ‘blind’ to part of the board each turn. Calibrated rank is based on the same idea, and recommended over this option.</li>
+</ul>
+</li>
+<li>Options that are more on the ‘fun and experimental’ side include: <ul>
+<li>Variants of <strong>Blinded Policy</strong>, which use the same basic strategy, but with a twist:<ul>
+<li><strong>Local Style</strong> will consider mostly moves close to the last move.</li>
+<li><strong>Tenuki Style</strong> will consider mostly moves away from the last move.</li>
+<li><strong>Influential Style</strong> will consider mostly 4th+ line moves, leading to a center-oriented style.</li>
+<li><strong>Territory Style</strong> is biased in the opposite way, towards 1-3rd line moves.</li>
+</ul>
+</li>
+<li><strong>KataJigo</strong> is KataGo attempting to win by 0.5 points, typically by responding to your mistakes with an immediate mistake of it’s own.</li>
+<li><strong>KataAntiMirror</strong> is KataGo assuming you are playing mirror go and attempting to break out of it with profit as long as you are.</li>
+</ul>
+</li>
+</ul>
+<p>The Engine based AIs (KataGo, ScoreLoss, KataJigo) are affected by both the model and choice of visits and maximum time,<br> while the policy net based AIs are affected by the choice of model file, but work identically with 1 visit.</p>
+<p>Further technical details and discussion on these AIs can be found on <a target="_blank" rel="noopener" href="http://lifein19x19.com/viewtopic.php?f=10&t=17488&sid=b11e42c005bb6f4f48c83771e6a27eff">this</a> thread at the life in 19x19 forums.</p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title=" Analysis"></a><a name="analysis"></a> Analysis</h2><p>Analysis options in KaTrain allow you to explore variations and request more in-depth analysis from the engine at any point in the game.</p>
+<p>Keyboard shortcuts are shown with <strong>[key]</strong>.</p>
+<ul>
+<li><p><strong>[Tab]</strong>: Switch between analysis and play modes.</p>
+<ul>
+<li>AI moves, teaching mode and timers are suspended in analysis mode.</li>
+<li>The state of the analysis options and right-hand side panels and options is saved independently for ‘play’ and ‘analyze’,<br>allowing you to quickly switch between a more minimalistic ‘play’ mode and more complex ‘analysis’ mode.</li>
+</ul>
+</li>
+<li><p>The checkboxes at the top of the screen:</p>
+<ul>
+<li><strong>[q]</strong>: Child moves are shown. On by default, can turn it off to avoid obscuring other information or when <pre><code>     wanting to guess the next move.
+</code></pre>
+</li>
+<li><strong>[w]</strong>: Show all dots: Cycles through showing all evaluation dots, showing the last few, and showing none.<ul>
+<li>You can configure whether they are shown for AIs under ‘Teaching/Analysis Settings’.</li>
+</ul>
+</li>
+<li><strong>[e]</strong>: Top moves: Show the next moves KataGo considered, colored by their expected point loss. <pre><code> Small/faint dots indicate high uncertainty and never show text (lower than your &#39;fast visits&#39; setting). 
+ Hover over any of them to see the principal variation.
+</code></pre>
+</li>
+<li><strong>[r]</strong>: Policy moves: Show KataGo’s policy network evaluation, i.e. where it thinks the best next move is purely from the position,<br> and in the absence of any ‘reading’. This turns off the ‘top moves’ setting as the overlap is often not useful.</li>
+<li><strong>[t]</strong>: Expected territory: Show expected ownership of each intersection.</li>
+</ul>
+</li>
+<li><p>The analysis options available under the ‘Analysis’ button are used for deeper evaluation of the position:</p>
+<ul>
+<li><strong>[a]</strong>: Deeper analysis: Re-evaluate the position using more visits, usually resulting in a more accurate evaluation.</li>
+<li><strong>[s]</strong>: Equalize visits: Re-evaluate all currently shown next moves with the same visits as the current top move. Useful to increase confidence in the suggestions with high uncertainty.</li>
+<li><strong>[d]</strong>: Analyze all moves: Evaluate all possible next moves. This can take a bit of time even though ‘fast_visits’ is used, but can be useful to see how many reasonable next moves are available.</li>
+<li><strong>[f]</strong>: Find alternatives: Increases analysis of current candidate moves to at least the ‘fast visits’ level, and request a new query that excludes all current candidate moves.    </li>
+<li><strong>[g]</strong>: Select area of interest: set an area and search only for moves in this box.<pre><code>     Good for solving tsumegos. Note that some results may appear outside the box due to establishing a baseline for the best move,
+     and the opponent can tenuki in variations.
+</code></pre>
+</li>
+<li><strong>[h]</strong>: Reset analysis. This reverts the analysis to what the engine returns after a normal query, removing any additional exploration.</li>
+<li><strong>[i]</strong>: Start insertion mode. Allows you to insert moves, to improve analysis when both players ignore an important exchange or life and death situation. Press again to stop inserting and copy the rest of the branch.</li>
+<li><strong>[l]</strong>: Play out the game until the end and add as a collapsed branch, to visualize the potential effect of mistakes. This is done in the background, and can be started at several nodes at once when comparing the results at different starting positions.      </li>
+<li><strong>[spacebar]</strong>: Turn continuous analysis on/off. This will continuously improve analysis of the current position, similar to Lizzie’s ‘pondering’, but only when there are no other queries going on.</li>
+<li><strong>[enter]</strong> AI move. Makes the AI move for the current player regardless of current player selection.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Keyboard-and-mouse-shortcuts"><a href="#Keyboard-and-mouse-shortcuts" class="headerlink" title=" Keyboard and mouse shortcuts"></a><a name="keyboard"></a> Keyboard and mouse shortcuts</h2><p>In addition to shortcuts mentioned above and those shown in the main menu:</p>
+<ul>
+<li><strong>[Alt]</strong>: Open the main menu.</li>
+<li><strong>[~]</strong> or <strong>[ ` ]</strong> or <strong>[F12]</strong>: Cycles through more minimalistic UI modes.</li>
+<li><strong>[k]</strong>: Toggle display of board coordinates.</li>
+<li><strong>[p]</strong>: Pass</li>
+<li><strong>[pause]</strong>: Pause/Resume timer</li>
+<li><strong>[arrow left]</strong> or <strong>[z]</strong>: Undo move. Hold shift for 10 moves at a time, or ctrl to skip to the start.</li>
+<li><strong>[arrow right]</strong> or <strong>[x]</strong>: Redo move. Hold shift for 10 moves at a time, or ctrl to skip to the end.</li>
+<li><strong>[arrow up/down]</strong> Switch branch, as would be expected from the move tree.</li>
+<li><strong>[home/end]</strong> Go to the beginning/end of the game.</li>
+<li><strong>[pageup]</strong> Make the currently selected node the main branch</li>
+<li><strong>[Ctrl-delete]</strong> Delete current node.</li>
+<li><strong>[c]</strong> Collapse/Uncollapse the branch from the current node to the previous branching point.</li>
+<li><strong>[b]</strong> Go back to the previous branching point.</li>
+<li><strong>[Shift-b]</strong> Go back the main branch.</li>
+<li><strong>[n]</strong> As in clicking the forward red arrow, go to one move before the next mistake (orange or worse) by a human player.</li>
+<li><strong>[Shift-n]</strong> As in clicking the backward red arrow, go to one move before the previous mistake.</li>
+<li><strong>[scroll mouse]</strong>:<ul>
+<li>When hovering the cursor over the right panel: Redo/Undo move.</li>
+<li>When hovering over a candidate move: Scroll through principal variation.</li>
+</ul>
+</li>
+<li><strong>[middle/scroll wheel click]</strong>: Add principal variation to the move tree. When scrolling, only moves up to the point you are viewing are added.</li>
+<li><strong>[click on a move]</strong>: See detailed statistics for a previous move, along with expected variation that was best instead of this move.</li>
+<li><strong>[double-click on a move]</strong>: Navigate directly to just before that point in the game.</li>
+<li><strong>[Ctrl-V]</strong>: Load SGF from the clipboard and do a ‘fast’ analysis of the game (with a high priority normal analysis for the last move).</li>
+<li><strong>[Ctrl-C]</strong>: Save SGF to clipboard.</li>
+<li><strong>[Escape]</strong>: Stop all analysis.</li>
+</ul>
+<h2 id="Contributing-to-distributed-training"><a href="#Contributing-to-distributed-training" class="headerlink" title="  Contributing to distributed training"></a><a name="distributed"></a>  Contributing to distributed training</h2><p>Starting in December 2020, KataGo started <a target="_blank" rel="noopener" href="https://katagotraining.org/">distributed training</a>.<br>This allows people to all help generate self-play games to increase KataGo’s strength and train bigger models. </p>
+<p>KaTrain 1.8.0+ makes it easy to contribute to distributed training: simply select the option from the main menu, register an account, and click run.</p>
+<p>During this mode you can do little more than watch games. Toggling continuous analysis (spacebar) will allow you to switch between manually navigating the current game, and automatically advancing it.</p>
+<p>Keep in mind that partial games are not uploaded,<br> so it is best to plan to keep it running for at least an hour, if not several, for the most effective contribution.  </p>
+<h2 id="Themes"><a href="#Themes" class="headerlink" title=" Themes"></a><a name="themes"></a> Themes</h2><p>See <a href="THEMES.md">these instructions</a> for how to modify the look of any graphics or colours, and creating or install themes.</p>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title=" FAQ"></a><a name="faq"></a> FAQ</h2><ul>
+<li>The program is running too slowly. How can I speed it up?<ul>
+<li> Adjust the number of visits or maximum time allowed in the settings.</li>
+</ul>
+</li>
+<li>KataGo crashes with “out of memory” errors, how can I prevent this?<ul>
+<li>Try using a lower number for <code>nnMaxBatchSize</code> in <code>KataGo/analysis_config.cfg</code>, and avoid using versions compiled with large board sizes.</li>
+<li>If still encountering problems, please start KataGo by itself to check for any errors it gives.</li>
+<li>Note that if you don’t have a GPU, or your GPU does not support OpenCL, you should use the ‘eigen’ binaries which run on CPU only.</li>
+</ul>
+</li>
+<li>The font size is too small<ul>
+<li>On some ultra-high resolution monitors, dialogs and other elements with text can appear too small. Please see <a target="_blank" rel="noopener" href="https://github.com/sanderland/katrain/issues/359#issuecomment-784096271">these</a> instructions to adjust them.</li>
+</ul>
+</li>
+<li>The app crashes with an error about “unable to find any valuable cutbuffer provider”<ul>
+<li>Install xclip using <code>sudo apt-get install xclip</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="Support-Contribute"><a href="#Support-Contribute" class="headerlink" title=" Support / Contribute"></a><a name="support"></a> Support / Contribute</h2><p><a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/issues"><img src="http://img.shields.io/github/issues/sanderland/katrain" alt="GitHub issues" loading="lazy"></a><br><a href="CONTRIBUTIONS.md"><img src="http://img.shields.io/static/v1?label=contributors&message=26&color=dcb424" alt="Contributors" loading="lazy"></a><br><a target="_blank" rel="noopener" href="http://github.com/sponsors/sanderland"><img src="http://img.shields.io/static/v1?label=sponsor&message=%E2%9D%A4&logo=GitHub&color=dcb424&link=http://github.com/sponsors/sanderland/" alt="Github sponsors" loading="lazy"></a></p>
+<ul>
+<li>Ideas, feedback, and contributions to code or translations are all very welcome.<ul>
+<li>For suggestions and planned improvements, see <a target="_blank" rel="noopener" href="http://github.com/sanderland/katrain/issues">open issues</a> on github to check if the functionality is already planned.</li>
+</ul>
+</li>
+<li>You can contact me on the <a target="_blank" rel="noopener" href="http://discord.gg/AjTPFpN">Leela Zero &amp; Friends Discord</a> (use the #gui channel) to get help, discuss improvements, or simply show your appreciation.</li>
+<li>You can also donate to the project through <a target="_blank" rel="noopener" href="http://github.com/sponsors/sanderland">Github Sponsors</a>.</li>
+</ul>
+</div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>落雨</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://example.com/2022/07/07/README/" title="">http://example.com/2022/07/07/README/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2022/07/19/%E7%A7%81%E4%BA%BA%E4%B8%93%E5%B1%9E%E6%9D%B0%E4%BC%A6%E6%AD%8C/" rel="prev" title="私人专属【杰伦歌曲汇总】"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">私人专属【杰伦歌曲汇总】</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2022/07/07/Untitled-2/" rel="next" title="签到软件一份"><span class="post-nav-text">签到软件一份</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2022 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> 落雨</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.2</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.4</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><div class="aplayer no-destroy" id="aplayer" data-id="2468924580" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay data-theme="#0078E7" data-loop="all" data-order="list" data-preload="auto" data-volume="0.7" data-mutex data-lrctype="0" data-listmaxheight="340px" data-storagename="metingjs"></div></body></html>
