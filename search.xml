@@ -436,4 +436,15 @@
         <tag>-教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>私服ios教程</title>
+    <url>/2022/10/16/%E7%A7%81%E6%9C%8Dios%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="重要的几句话"><a href="#重要的几句话" class="headerlink" title="重要的几句话"></a>重要的几句话</h1><p>·确保你的机场可以接入的设备数<br>·需要有一个电脑<br>·电脑上要备有clash for Windows </p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开<code>clashfor Windows</code><br><img src="https://img1.imgtp.com/2022/10/16/dCcuT0Iq.jpg" alt="alt 图标" loading="lazy">打开<code>系统代理</code>和<code>允许局域网链接</code><br>英文版为<code>system proxy</code>和<code>allow lan</code><br>鼠标移到<code>允许局域网链接</code>即<code>allow lan</code>上<br><img src="https://img1.imgtp.com/2022/10/16/YuyfERt4.jpg" alt="alt 图标" loading="lazy">出现以上的地址，记住它 </p>
+<h3 id="我们转向iPhone"><a href="#我们转向iPhone" class="headerlink" title="我们转向iPhone"></a>我们转向iPhone</h3><p>打开WiFi，界面如上<br><img src="https://img1.imgtp.com/2022/10/16/WRgxl4K6.jpg" alt="alt 图标" loading="lazy">点这个图标<br>划到底部，点<code>配置代理</code>选项<br>选择手动<br>服务器填写刚刚记住的内容，端口填写7890 </p>
+]]></content>
+      <tags>
+        <tag>-教程</tag>
+      </tags>
+  </entry>
 </search>
